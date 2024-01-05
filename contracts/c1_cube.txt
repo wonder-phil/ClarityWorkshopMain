@@ -1,0 +1,34 @@
+
+;; title: c1
+;; version:
+;; summary:
+;; description:
+
+;; traits
+;;
+
+;; token definitions
+;; 
+
+;; constants
+;;
+
+;; data vars
+;;
+
+;; data maps
+;;
+
+;; public functions
+;;
+(define-public (hello00) (ok "Hello"))
+(define-public (cube (x int)) (ok (* x x x)))
+(define-public (hello (name (string-ascii 30)))
+	(ok (concat "hello: " name)))
+
+;; read only functions
+;;
+
+;; private functions
+;;
+

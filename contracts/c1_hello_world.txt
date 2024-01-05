@@ -1,0 +1,30 @@
+
+;; title: c1
+;; version:
+;; summary:
+;; description:
+
+;; traits
+;;
+
+;; token definitions
+;; 
+
+;; constants
+;;
+
+;; data vars
+;;
+
+;; data maps
+;;
+
+;; public functions
+;;
+(define-public (hello) (ok "hello"))
+;; read only functions
+;;
+
+;; private functions
+;;
+

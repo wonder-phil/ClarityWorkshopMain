@@ -1,0 +1,39 @@
+
+;; title: c1
+;; version:
+;; summary:
+;; description:
+
+;; traits
+;;
+
+;; token definitions
+;; 
+
+;; constants
+;;
+
+;; data vars
+;;
+
+;; data maps
+;;
+
+;; public functions
+;;
+
+(define-public (hello)
+    (ok "Hello world"))
+	
+(define-private (cube (x int))
+    (* x x x))
+   
+(define-public (ninth (x int))
+	(ok (cube (cube x))))
+	
+;; read only functions
+;;
+
+;; private functions
+;;
+

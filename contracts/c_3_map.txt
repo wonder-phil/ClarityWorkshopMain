@@ -1,0 +1,46 @@
+
+;; title: c1
+;; version:
+;; summary:
+;; description:
+
+;; traits
+;;
+
+;; token definitions
+;; 
+
+;; constants
+;;
+
+;; data vars
+;;
+
+;; data maps
+;;
+(define-map mymap int int)
+
+
+
+;; public functions
+;;
+(define-public (map-add-pair (x int) (y int))
+	(ok (map-set mymap x y)))
+	
+	
+	
+(define-public (print-map (x int))
+	(begin
+		(print (map-get? mymap x))
+		(ok true)))
+		
+(define-map squares { x: int } { square: int })
+(define-private (add-entry (x int))
+  (map-insert squares { x: 2 } { square: (* x x) }))
+
+;; read only functions
+;;
+
+;; private functions
+;;
+

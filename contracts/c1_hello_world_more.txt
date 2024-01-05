@@ -1,0 +1,37 @@
+
+;; title: c1
+;; version:
+;; summary:
+;; description:
+
+;; traits
+;;
+
+;; token definitions
+;; 
+
+;; constants
+;;
+
+;; data vars
+;;
+
+;; data maps
+;;
+
+;; public functions
+;;
+(define-public (hello) (ok "hello"))
+
+
+(define-public (hello (name (string-ascii 20) ))
+	(ok (concat "hello" name)))
+	
+;; read only functions
+;;
+
+;; private functions
+;;
+
+(define-public (cube-two (x int) (y int))
+	(* x x x y))

@@ -1,0 +1,43 @@
+
+;; title: c1
+;; version:
+;; summary:
+;; description:
+
+;; traits
+;;
+
+;; token definitions
+;; 
+
+;; constants
+;;
+
+;; data vars
+;;
+(define-data-var even-values uint u0)
+;; data maps
+;;
+
+;; public functions
+;;
+(define-public (count-even (number uint))
+    (begin
+        ;; increment the "event-values" variable by one.
+        (var-set even-values (+ (var-get even-values) u1))
+        
+        ;; check if the input number is even (number mod 2 equals 0).
+        (if (is-eq (mod number u2) u0)
+            (ok "the number is even")
+            (err "the number is uneven")
+        )
+    )
+)
+;; read only functions
+;;
+(define-read-only (get-even)
+	(ok (var-get 
+			even-values)))
+;; private functions
+;;
+

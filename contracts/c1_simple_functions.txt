@@ -1,0 +1,34 @@
+
+;; title: c1
+;; version:
+;; summary:
+;; description:
+
+;; traits
+;;
+
+;; token definitions
+;; 
+
+;; constants
+;;
+
+;; data vars
+;;
+(define-data-var message (string-ascii 21) "Clarity is a virtue")
+;; data maps
+;;
+
+
+;; read only functions
+;;
+(define-read-only (get-my-message) (ok (var-get message)))
+
+;; public functions
+;;
+(define-public (set-my-message (str (string-ascii 21)))
+	(ok (var-set message str)))
+;; public functions
+;;
+(define-public (hello) (ok "hello"))
+
